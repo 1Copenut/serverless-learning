@@ -1,0 +1,12 @@
+{
+  "name": "serverless-api",
+  "version": "0.0.0",
+  "devDependencies": {
+    "wrangler": "2.0.25"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  }
+}
