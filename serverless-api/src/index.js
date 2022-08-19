@@ -8,8 +8,15 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-export default {
-	async fetch(request) {
-		return new Response("Hello World!");
-	},
-};
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request));
+});
+
+/**
+ * Respond with hello worker text
+ * @param {Request} request
+ */
+async function handleRequest(request) {
+  const { query } = await request.json();
+  return new Response(`Your query was ${query}`);
+}
