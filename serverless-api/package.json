@@ -2,7 +2,7 @@
   "name": "serverless-api",
   "version": "0.0.0",
   "devDependencies": {
-    "wrangler": "2.21.0"
+    "wrangler": "3.28.2"
   },
   "private": true,
   "scripts": {
