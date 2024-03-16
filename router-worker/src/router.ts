@@ -1,3 +1,5 @@
+import { getTodo } from "./routes/todoRoute";
+
 import { Env } from "./index";
 
 export async function routeRequest(
@@ -16,7 +18,7 @@ export async function routeRequest(
       return new Response("Yahtzee!", { status: 200 });
     case "todo":
       // Handle '/todo' route
-      return new Response("Get todo!", { status: 200 });
+      return getTodo(request);
     case "media":
       // Handle '/media' route
       return new Response("Get media!", { status: 200 });
