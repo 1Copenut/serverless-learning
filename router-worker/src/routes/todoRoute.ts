@@ -1,4 +1,4 @@
-export async function getTodo(request: Request) {
+export async function getTodo(request: Request): Promise<Response> {
   // Fetch JSON from an API
   const postPlaceHolder = await fetch(
     "https://jsonplaceholder.typicode.com/todos/1"

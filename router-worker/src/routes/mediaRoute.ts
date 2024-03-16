@@ -1,4 +1,4 @@
-export async function getMedia(request: Request) {
+export async function getMedia(request: Request): Promise<Response> {
   // Get a random image
   const randomImageId = Math.floor(Math.random() * (300 - 1 + 1) + 1);
   const mediaPlaceHolder = await fetch(
