@@ -1,3 +1,4 @@
+import { getMedia } from "./routes/mediaRoute";
 import { getTodo } from "./routes/todoRoute";
 
 import { Env } from "./index";
@@ -21,7 +22,7 @@ export async function routeRequest(
       return getTodo(request);
     case "media":
       // Handle '/media' route
-      return new Response("Get media!", { status: 200 });
+      return getMedia(request);
     default:
       // Default case, return a 404 not found
       return new Response("Not found", { status: 404 });
