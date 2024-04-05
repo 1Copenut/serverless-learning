@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "fauna": "^1.3.1",
+    "hono": "^4.2.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240404.0",
+    "wrangler": "^3.47.0"
+  }
+}
