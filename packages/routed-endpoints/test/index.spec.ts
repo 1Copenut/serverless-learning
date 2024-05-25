@@ -1,5 +1,10 @@
 // test/index.spec.ts
-import { env, createExecutionContext, waitOnExecutionContext, SELF } from "cloudflare:test";
+import {
+  env,
+  createExecutionContext,
+  waitOnExecutionContext,
+  SELF,
+} from "cloudflare:test";
 import { describe, it, expect } from "vitest";
 import worker from "../src/index";
 
@@ -15,11 +20,11 @@ describe("Hello World worker", () => {
     const response = await worker.fetch(request, env, ctx);
     // Wait for all `Promise`s passed to `ctx.waitUntil()` to settle before running test assertions
     await waitOnExecutionContext(ctx);
-    expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
+    expect(await response.text()).toMatchInlineSnapshot(`"Yahtzee!"`);
   });
 
   it("responds with Hello World! (integration style)", async () => {
-   const response = await SELF.fetch("https://example.com");
-   expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
- });
+    const response = await SELF.fetch("https://example.com");
+    expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
+  });
 });
