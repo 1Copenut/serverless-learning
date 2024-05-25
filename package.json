@@ -1,0 +1,20 @@
+{
+  "name": "serverless-learning",
+  "version": "1.0.0",
+  "description": "I recently discovered [Cloudflare Workers](https://workers.cloudflare.com/) and started to appreciate all the things I could do with them.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "serverless",
+    "cloudflare",
+    "AWS Lambda",
+    "edge computing"
+  ],
+  "author": "Trevor Pierce",
+  "license": "MIT"
+}
