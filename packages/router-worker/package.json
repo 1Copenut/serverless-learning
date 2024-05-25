@@ -1,5 +1,5 @@
 {
-  "name": "router-worker-0001",
+  "name": "@continuumdesign/router-worker",
   "version": "0.0.0",
   "private": true,
   "scripts": {
