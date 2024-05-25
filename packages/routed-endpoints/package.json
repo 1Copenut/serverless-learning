@@ -1,5 +1,6 @@
 {
-  "name": "router-worker-0001",
+  "name": "@continuumdesign/router-worker",
+  "description": "A Cloudflare worker with more in-depth routing and returning different data types based on endpoint",
   "version": "0.0.0",
   "private": true,
   "scripts": {
