@@ -1,4 +1,8 @@
 {
+  "name": "@continuumdesign/fauna-db",
+  "description": "A Cloudflare Worker API that interacts with a remote FaunaDB instance",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts"
