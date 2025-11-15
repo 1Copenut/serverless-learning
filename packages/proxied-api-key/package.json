@@ -3,7 +3,7 @@
   "description": "A first project using Cloudflare Workers to hit an Unsplash API endpoint with a proxied API key",
   "version": "0.0.0",
   "devDependencies": {
-    "wrangler": "3.28.2"
+    "wrangler": "4.47.0"
   },
   "private": true,
   "scripts": {
