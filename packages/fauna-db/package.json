@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "fauna": "^2.5.0",
-    "hono": "^4.11.4"
+    "hono": "^4.11.7"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20251115.0",
